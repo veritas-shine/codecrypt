@@ -1,0 +1,39 @@
+project(codecrypt)
+include(CMakeHelpers.cmake)
+
+CheckLibrary()
+
+add_library(codecrypt
+        actions.cpp
+        algo_suite.cpp
+        algos_enc.cpp
+        algos_sig.cpp
+        base64.cpp
+        bvector.cpp
+        chacha.cpp
+        envelope.cpp
+        fft.cpp
+        fmtseq.cpp
+        generator.cpp
+        gf2m.cpp
+        hash.cpp
+        hashfile.cpp
+        iohelpers.cpp
+        ios.cpp
+        keyring.cpp
+        matrix.cpp
+        mce_qcmdpc.cpp
+        message.cpp
+        permutation.cpp
+        privfile.cpp
+        polynomial.cpp
+        sc.cpp
+        seclock.cpp
+        sencode.cpp
+        serialization.cpp
+        str_match.cpp
+        symkey.cpp
+        pwrng.cpp
+        xsynd.cpp)
+
+LinTargetLibrary(codecrypt)
